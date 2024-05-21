@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+  background-color: #f2e9e4;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+  background-color: white;
+  border: 8px solid #4a4e69;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0px 10px 0px 0px #22223b;
+}
+
+.input-wrap {
+  width: 50%;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #6d6875;
+  padding: 1rem 0;
+}
+
+label {
+  display: block;
+  margin: 5px 0px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #4a4e69;
+}
+
+.convert-input {
+  margin-top: 2.5rem;
+}
+
+.degree-input {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 10px 20px;
+  width: 80%;
+  height: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  font-size: 1.05em;
+  font-weight: 600;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input:focus-visible {
+  outline: 3px solid #4a4e69;
+  outline-offset: 3px;
+}
+
+#temp-option {
+  padding: 10px 10px;
+  height: 42px;
+  font-size: 1em;
+  background: none;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+#temp-option:focus-visible {
+  outline: 3px solid #4a4e69;
+  outline-offset: 3px;
+}
+
+#convert-opt {
+  padding: 10px;
+  width: 100%;
+  font-size: 1em;
+  background: #4a4e69;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#convert-opt:focus-visible {
+  outline: 3px solid #4a4e69;
+  outline-offset: 3px;
+}
+
+select option {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.submit-btn {
+  padding: 10px;
+  width: 150px;
+  margin: 30px 25%;
+  border-radius: 50px;
+  border: none;
+  background-color: #22223b;
+  color: white;
+  font-weight: 600;
+  font-size: 1.05em;
+  cursor: pointer;
+  box-shadow: 0px 3px 0px 0px #4a4e69;
+}
+
+.submit-btn:hover {
+  background-color: #32324d;
+}
+
+.submit-btn:active {
+  translate: 0 2px;
+  box-shadow: 0px 1px 0px 0px #6d6875;
+}
+
+.result-wrap {
+  width: 50%;
+  width: 400px;
+  height: 100%;
+  background-color: #4a4e69;
+  position: relative;
+}
+
+h2 {
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  font-size: 2.8em;
+  color: white;
+  font-weight: 500;
+}
+
+h2 > sup {
+  font-size: 0.5em;
+  position: relative;
+  bottom: 15px;
+  right: 10px;
+}
